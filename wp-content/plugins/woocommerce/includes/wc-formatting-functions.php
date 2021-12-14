@@ -782,18 +782,18 @@ if ( ! function_exists( 'wc_rgb_from_hex' ) ) {
 	 *
 	 * @return array
 	 */
-	function wc_rgb_from_hex( $color ) {
-		$color = str_replace( '#', '', $color );
-		// Convert shorthand colors to full format, e.g. "FFF" -> "FFFFFF".
-		$color = preg_replace( '~^(.)(.)(.)$~', '$1$1$2$2$3$3', $color );
+	// function wc_rgb_from_hex( $color ) {
+	// 	$color = str_replace( '#', '', $color );
+	// 	// Convert shorthand colors to full format, e.g. "FFF" -> "FFFFFF".
+	// 	$color = preg_replace( '~^(.)(.)(.)$~', '$1$1$2$2$3$3', $color );
 
-		$rgb      = array();
-		$rgb['R'] = hexdec( $color{0} . $color{1} );
-		$rgb['G'] = hexdec( $color{2} . $color{3} );
-		$rgb['B'] = hexdec( $color{4} . $color{5} );
+	// 	$rgb      = array();
+	// 	$rgb['R'] = hexdec( $color{0} . $color{1} );
+	// 	$rgb['G'] = hexdec( $color{2} . $color{3} );
+	// 	$rgb['B'] = hexdec( $color{4} . $color{5} );
 
-		return $rgb;
-	}
+	// 	return $rgb;
+	// }
 }
 
 if ( ! function_exists( 'wc_hex_darker' ) ) {

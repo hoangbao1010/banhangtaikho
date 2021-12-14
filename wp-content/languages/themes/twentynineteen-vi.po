@@ -33,8 +33,8 @@ msgstr "Xem thêm"
 msgid "Back"
 msgstr "Trở lại"
 
-#: template-parts/content/content.php:18
 #: template-parts/content/content-excerpt.php:18
+#: template-parts/content/content.php:18
 msgctxt "post"
 msgid "Featured"
 msgstr "Nổi bật"
@@ -98,7 +98,7 @@ msgstr "Nhỏ"
 msgid "S"
 msgstr "S"
 
-#: functions.php:60 footer.php:37
+#: footer.php:37 functions.php:60
 msgid "Footer Menu"
 msgstr "Menu cuối trang"
 
@@ -107,7 +107,9 @@ msgid "Apply a custom color for buttons, links, featured images, etc."
 msgstr "Áp dụng màu riêng cho nút ấn, liên kết, ảnh đại diện,..."
 
 #. translators: %s: WordPress version.
-#: inc/back-compat.php:40 inc/back-compat.php:55 inc/back-compat.php:76
+#. translators: %s: WordPress version.
+#. translators: %s: WordPress version.
+#: inc/back-compat.php:43 inc/back-compat.php:60 inc/back-compat.php:83
 msgid "Twenty Nineteen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Nineteen yêu cầu phiên bản WordPress 4.7 trở lên. Bạn đang sử dụng phiên bản %s. Hãy nâng cấp và thử lại."
 
@@ -123,7 +125,7 @@ msgstr "Trang"
 msgid "Add widgets here to appear in your footer."
 msgstr "Thêm widget ở đây để hiển thị ở cuối trang."
 
-#: template-parts/footer/footer-widgets.php:12 functions.php:194
+#: functions.php:194 template-parts/footer/footer-widgets.php:12
 msgid "Footer"
 msgstr "Cuối trang"
 
@@ -152,9 +154,9 @@ msgstr "Trước"
 msgid "Next"
 msgstr "Trang sau"
 
+#: image.php:52 template-parts/content/content-page.php:27
+#: template-parts/content/content-single.php:40
 #: template-parts/content/content.php:49
-#: template-parts/content/content-page.php:27
-#: template-parts/content/content-single.php:40 image.php:52
 msgid "Pages:"
 msgstr "Trang:"
 
@@ -179,6 +181,7 @@ msgid "Next Post"
 msgstr "Bài tiếp theo"
 
 #. translators: Used between list items, there is a space after the comma.
+#. translators: Used between list items, there is a space after the comma.
 #: inc/template-tags.php:86 inc/template-tags.php:98
 msgid ", "
 msgstr ", "
@@ -191,14 +194,15 @@ msgstr "Menu trên cùng"
 msgid "Previous Post"
 msgstr "Bài cũ hơn"
 
-#. translators: %s: Post title. Only visible to screen readers.
 #. translators: %s: Post title.
+#. translators: %s: Post title. Only visible to screen readers.
+#. translators: %s: Post title. Only visible to screen readers.
+#: functions.php:225 template-parts/content/content-single.php:27
 #: template-parts/content/content.php:36
-#: template-parts/content/content-single.php:27 functions.php:225
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Đọc tiếp<span class=\"screen-reader-text\"> \"%s\"</span>"
 
-#: template-parts/header/site-branding.php:46 functions.php:61
+#: functions.php:61 template-parts/header/site-branding.php:46
 msgid "Social Links Menu"
 msgstr "Menu mạng xã hội"
 
@@ -338,8 +342,10 @@ msgid "Category Archives: "
 msgstr "Bài viết trong chuyên mục:"
 
 #. translators: %s: Post title. Only visible to screen readers.
-#: template-parts/content/content-page.php:41
-#: template-parts/header/entry-header.php:32 inc/template-tags.php:120
+#. translators: %s: Post title. Only visible to screen readers.
+#. translators: %s: Post title. Only visible to screen readers.
+#: inc/template-tags.php:120 template-parts/content/content-page.php:41
+#: template-parts/header/entry-header.php:32
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Sửa <span class=\"screen-reader-text\">%s</span>"
 
