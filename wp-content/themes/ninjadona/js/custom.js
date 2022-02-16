@@ -3,18 +3,16 @@ jQuery(document).ready(function(){
 
 				// SCROLL TO DIV
 				jQuery(window).scroll(function(){
-					if(jQuery(this).scrollTop()>500){
-						jQuery('.scrolltop').addClass('go_scrolltop');
-					}
-					else{
-						jQuery('.scrolltop').removeClass('go_scrolltop');
+					if(jQuery(this).scrollTop() > 50){
+						jQuery('.scroll_top').fadeIn();
+					}else{
+						jQuery('.scroll_top').fadeOut();
 					}
 				});
-				jQuery('.scrolltop').click(function (){
-					jQuery('html, body').animate({
-						scrollTop: jQuery("html").offset().top
-					}, 1000);
-				}); 
+				            jQuery('.scroll_top').click(function(event){
+                event.preventDefault();
+                jQuery('html,body').animate({scrollTop : 0},800);
+            });
 			// SLIDE
 			if(jQuery('.banner_homepage').length>0){
 				console.log(1);
@@ -134,6 +132,5 @@ jQuery(document).ready(function(){
 		jQuery('.list_products_categories ul li').click(function(){
 			jQuery(this).addClass('active').siblings().removeClass('active, editBefore_li_product ');
 		});
-		
 	});
 

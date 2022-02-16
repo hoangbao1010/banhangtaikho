@@ -17,11 +17,11 @@ get_header();
 				<div class="col-sm-9">
 					<div class="g_content_left">
 						<?php 
-							if(have_posts()) :
-								while(have_posts()) : the_post();
+						if(have_posts()) :
+							while(have_posts()) : the_post();
 								the_content();
 							endwhile;
-							endif;
+						endif;
 						?>
 					</div>
 
